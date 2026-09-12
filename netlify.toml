@@ -1,0 +1,10 @@
+# Netlify Configuration for SPA Vite Deployment
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA routing redirect rule to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
