@@ -1,0 +1,6 @@
+{
+  "name": "Jahnu Bureddy - Football Scouting Portal",
+  "description": "Official Wyscout and Hudl protocol player scouting dossier, match audits, qualitative analytics, and recruitment portal for youth prospect Jahnu Bureddy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

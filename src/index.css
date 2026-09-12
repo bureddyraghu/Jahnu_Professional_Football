@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Bebas Neue", sans-serif;
+  --font-stat: "Bebas Neue", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  --color-pitch-emerald: #10B981;
+  --color-pitch-emerald-hover: #059669;
+  --color-kit-crimson: #E11D48;
+  --color-kit-crimson-dark: #BE123C;
+  --color-primary-container: #00855d;
+  --color-canvas-slate: #F1F5F9;
+  --color-canvas-subtle: #FAFAFA;
+  --color-canvas-pure: #FFFFFF;
+  --color-text-headline: #0F172A;
+  --color-text-body: #1E293B;
+  --color-text-muted: #64748B;
+  --color-badge-verified-bg: rgba(16, 185, 129, 0.12);
+  --color-badge-verified-text: #047857;
+  --color-badge-alert-bg: rgba(225, 29, 72, 0.1);
+  --color-badge-alert-text: #BE123C;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-bright: #f8f9ff;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Typography Utility Classes matching spec */
+.font-headline-xl {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.font-headline-lg {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.25rem, 4.5vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+.font-headline-md {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.font-headline-sm {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.font-stat-display {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.font-body-lead {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.font-body-default {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.font-label-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.font-label-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.font-label-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+/* Custom Print styles for PDF CV export */
+@media print {
+  header, footer, #recruiter-form, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
